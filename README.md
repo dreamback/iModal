@@ -1,5 +1,5 @@
 # iModal
-移动端模拟弹框,modal,iModal [demo](https://dreamback.github.io/iModal//demo.html)
+移动端模拟弹框,modal,iModal [demo](https://dreamback.github.io/iModal/demo.html)
 
 ## iModal 模拟弹框
 简单调用例子调用：
