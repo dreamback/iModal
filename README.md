@@ -14,7 +14,7 @@ var imodal =  iModal({
 ```
 
 ---
-
+[++demo++](./demo.html)
 快速参数文档：
 
 参数 | 类型/值|  默认 | 说明
