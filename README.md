@@ -43,7 +43,7 @@ btns例子：
     }
 ```
 - 可以自定义多个按钮；
-- 上面代码将生成 ==<button class="myBtn">我的按钮</button>== 大按钮HTML结构；
+- 上面代码将生成 &lt;button class="myBtn"&gt;我的按钮&lt;/button&gt; 的按钮HTML结构；
 - 同时可以为myBtn编写自定义样式；
 - 如果callbak返回false,点击后不关闭弹层，同时this纸箱iModal对象；
 - 如果超过2个按钮（包括ok&cancel按钮），一个按钮变为纵向排版。
