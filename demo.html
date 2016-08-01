@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>modal</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .iModal-wrapper{position:fixed;width:100%;height:100%;top:0;left:0;z-index:1000;background:rgba(0,0,0,.2);font-size:16px;
+            -webkit-transition: .4s background-color;
+        transition:.4s background-color;}
+        .iModal-wrapper *{-webkit-box-sizing:border-box;box-sizing:border-box;}
+        .iModal-wrapper button,
+        .iModal-wrapper input{border:none;background:none;-webkit-appearance:none;outline:none;font-size: 16px;}
+        .iModal{position:fixed;left:50%;top:50%;-webkit-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0);background-color:#fff;border-radius:3px;overflow:hidden;width:85%;border-radius:3px;font-size:16px;-webkit-user-select:none;overflow:hidden;opacity:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;text-align:center;-webkit-transition: .4s -webkit-transform;
+        transition: .4s transform;}
+        .iModal-title{font-weight:700;height:50px;line-height:50px;border-bottom:1px solid #eee;}
+        .iModal-content{padding: 20px;}
+        .iModal-btns{display: -webkit-box;display: -webkit-flex;display: flex;border-top: 1px solid #eee;}
+        .iModal-btns button{-webkit-box-flex:1;-webkit-flex:1;flex:1;height: 50px;line-height: 50px;border-right: 1px solid #eee;}
+        .iModal-btns .ok{color: #26A2FF;}
+        .iModal-btns button:active{background: #eee;}
+        .iModal-btns button:last-child{border-right: none;}
+
+        .iModal-wrapper.no-title .iModal-title,
+        .iModal-wrapper.no-ok .ok,
+        .iModal-wrapper.no-cancel .cancel,
+        .iModal-wrapper.emptyBtns .iModal-btns
+        {display: none;}
+
+        .iModal-hide{background-color: rgba(0,0,0,0);}
+        .iModal-hide .iModal{-webkit-transform:translate3d(-50%,200%,0);transform:translate3d(-50%,200%,0);}
+
+        .iModal-wrapper.horizontalBtns .iModal-btns{display: block;margin: 0 10px;border-top: none;}
+        .iModal-wrapper.horizontalBtns .iModal-btns button{display: block;width: 100%;border: 1px solid #eee;border-radius: 4px;margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+
+
+
+<!--     <div class="iModal-wrapper">
+        <div class="iModal">
+            <div class="iModal-title">
+                提示
+            </div>
+            <div class="iModal-content">
+                dafd
+            </div>
+            <div class="iModal-btns">
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+<script src="js/modal.js"></script>
+<script>
+   var imodal =  iModal({
+        title:'提示',
+        content:'我是内容',
+        ok:function(){},
+        cancel: function(){}
+    })
+</script>
+</body>
+</html>
